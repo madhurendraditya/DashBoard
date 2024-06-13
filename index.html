@@ -3,9 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <title>DashBoard</title>
-    
+    <link rel="stylesheet" href="style.css">
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css" integrity="sha512-DJLNx+VLY4aEiEQFjiawXaiceujj5GA7lIY8CHCIGQCBPfsEG0nGz1edb4Jvw1LR7q031zS5PpPqFuPA8ihlRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
+
 </head>
 <body>
+    <div class="container">
+        <div class="topBar">
+            <div class="logo"> <h2>Brand</h2></div>
+            <div class="search">
+                <input type="text" id="search" placeholder="search your dreams"> </input>
+                               <label for="search"> <i class="fa fa-search"></i></label>
+               </div>
+              <i class="fa fa-bell"></i>
+            <div class="user">
+                 <img src="img/png-transparent-user-profile-computer-icons-user-interface-mystique-miscellaneous-user-interface-design-smile-thumbnail.png" alt="logo">
+            </div>
+        </div>
+        <div class="slideBar">
+            <ul>
+                <li><a href="/home"> <i class="fas fa-th-large"></i>  <div><h3>Dashboard</h3></div> </a></li>
+                <li><a href="/">
+                    <i class="fas fa-user-graduate"></i>  <div class="slide-text"><h3>Student</h3></div>
+                </a></li>
+                <li><a href="">
+                    <i class="fas fa-chalkboard-teacher"></i>  <div class="slide-text"> <h3>teacher</h3> </div>
+                </a></li>
+                <li><a href="">
+                    <i class="fas fa-user"></i>  <div class="slide-text"> <h3>Employs</h3></div>
+                </a></li>
+                <li><a href="">
+                    <i class="fas fa-chart-bar"></i>  <div class="slide-text"><h3>Analytics</h3></div>
+                </a></li>
+                <li><a href="">
+                     <i class="fas fa-hand-holding-usd"></i>  <div class="slide-text"><h3>Earning</h3></div>
+                </a></li>
+                <li><a href="">
+                    <i class="fas fa-cog"></i>  <div class="slide-text"><h3>Setting</h3></div>
+                </a></li>
+                <li><a href="">
+                     <i class="fas fa-question"></i>  <div class="slide-text"><h3>Help</h3></div>
+                </a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="cards">
+                <div class="card">
+         <div class="card-container">
+             <div class="number"><h3>1217</h3></div>
+             <div class="card-name"> <h3>student</h3></div>
 
+         </div>
+         <div class="icon-box">
+             <i class="fas fa-user-graduate"></i>
+         </div>
+     </div>
+                <div class="card">
+                    <div class="card-container">
+                        <div class="number"><h3>47</h3></div>
+                        <div class="card-name"> <h3>Teacher</h3></div>
+
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-container">
+                        <div class="number"><h3>68</h3></div>
+                        <div class="card-name"> <h3>Employees</h3></div>
+
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-container">
+                        <div class="number"><h3>$2000</h3></div>
+                        <div class="card-name"> <h3>Earning</h3> </div>
+
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="charts">
+                 <div class="chart">
+                      <h2> Earning(Past 12 months)</h2>
+                     <canvas id="lineChart"></canvas>
+                   </div>
+                <div class="chart" id="doughnut-chart">
+                      <h2>Employees</h2>
+                    <canvas id="doughnutChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+<!--<script src="script.js"> </script>-->
 </body>
 </html>
